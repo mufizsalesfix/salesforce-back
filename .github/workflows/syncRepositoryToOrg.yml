@@ -43,7 +43,7 @@ jobs:
          if test -d "./backupfiles/force-app"; then
            echo force-app folder exists
          else
-           sfdx force:project:create --projectname backupfiles --manifest
+           sfdx project:generate --name backupfiles --manifest
          fi
         
          if test -f "./backupfiles/sfdx-project.json"; then
@@ -61,7 +61,7 @@ jobs:
          fi
         
          cd ./backupfiles
-         sfdx force:source:retrieve -u backupfiles -x manifest/package.xml
+         sfdx force:source:retrieve -o backupfiles -x manifest/package.xml
      - name: Save repository owner email
        run: |
         echo "owner_email=$(git log -n 1 --pretty=format:%ae )" >> $GITHUB_ENV
