@@ -5,7 +5,7 @@
               , "default": true 
             } 
   ]
-  , "name": "myproj"
+  , "name": "salesforce-backup"
   , "namespace": ""
   , "sfdcLoginUrl": "https://login.salesforce.com"
   , "sourceApiVersion": "54.0"
