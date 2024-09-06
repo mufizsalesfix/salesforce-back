@@ -55,11 +55,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>parentFieldApiName</name>
-                    <value>Assessment__c.Id</value>
+                    <value>Template__c.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>Assessment_Items__r</value>
+                    <value>Checklist_Items__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
@@ -67,7 +67,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>rowsToDisplay</name>
-                    <value>10</value>
+                    <value>20</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
@@ -80,14 +80,10 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Assessment Layout</masterLabel>
-    <sobjectType>Assessment__c</sobjectType>
+    <masterLabel>Template Record Page</masterLabel>
+    <sobjectType>Template__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>
-        <properties>
-            <name>enablePageActionConfig</name>
-            <value>false</value>
-        </properties>
     </template>
     <type>RecordPage</type>
 </FlexiPage>

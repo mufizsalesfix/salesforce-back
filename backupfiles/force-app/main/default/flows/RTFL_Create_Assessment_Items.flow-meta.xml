@@ -86,7 +86,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Checklist__c</object>
+        <object>Template__c</object>
         <sortField>Id</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -109,7 +109,7 @@
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Checklist_Item__c</object>
+        <object>Question__c</object>
         <sortField>Order__c</sortField>
         <sortOrder>Asc</sortOrder>
         <storeOutputAutomatically>true</storeOutputAutomatically>

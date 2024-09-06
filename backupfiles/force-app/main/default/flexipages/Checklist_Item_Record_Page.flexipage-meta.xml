@@ -21,24 +21,10 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>6</value>
+                    <value>3</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>hideUpdateButton</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>variant</name>
-                    <value>linear</value>
-                </componentInstanceProperties>
-                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
             </componentInstance>
         </itemInstances>
         <name>header</name>
@@ -55,11 +41,11 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>parentFieldApiName</name>
-                    <value>Assessment__c.Id</value>
+                    <value>Question__c.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>Assessment_Items__r</value>
+                    <value>Questions__r</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
@@ -80,14 +66,10 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Assessment Layout</masterLabel>
-    <sobjectType>Assessment__c</sobjectType>
+    <masterLabel>Checklist Item Record Page</masterLabel>
+    <sobjectType>Question__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>
-        <properties>
-            <name>enablePageActionConfig</name>
-            <value>false</value>
-        </properties>
     </template>
     <type>RecordPage</type>
 </FlexiPage>
