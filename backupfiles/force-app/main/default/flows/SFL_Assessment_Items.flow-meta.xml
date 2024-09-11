@@ -123,6 +123,26 @@
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <isRequired>false</isRequired>
+            <objectFieldReference>Account.Rating</objectFieldReference>
+        </fields>
+        <fields>
+            <fieldType>ObjectProvided</fieldType>
+            <isRequired>false</isRequired>
+            <objectFieldReference>Account.Active__c</objectFieldReference>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Account.Rating</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Hot</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
             <name>Doe_they_have_a_dog</name>
             <choiceReferences>yes</choiceReferences>
             <choiceReferences>no</choiceReferences>
@@ -196,7 +216,15 @@
             <targetReference>Get_Assessment_Items</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
+    <variables>
+        <name>Account</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
     <variables>
         <name>AssessmentItem</name>
         <dataType>SObject</dataType>
